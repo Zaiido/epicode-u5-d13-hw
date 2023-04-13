@@ -78,6 +78,7 @@ const Home = () => {
               }
               socket.emit("sendMessage", { message: newMessage })
               setAllMessages([...allMessages, newMessage])
+              setMessage("")
             }}
           >
             <FormControl
